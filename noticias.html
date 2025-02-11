@@ -16,17 +16,17 @@
         background-position: center center;
         color: #ffffff;
         padding-top: 80px;
-        padding-bottom: 120px; /* Mais espaço inferior */
+        padding-bottom: 120px;
         background-attachment: fixed;
       }
-
+     
       .navbar {
         background-color: #1c1c1c;
       }
 
       footer {
         background-color: #1c1c1c;
-        margin-top: 30px; /* Margem superior para o footer */
+        margin-top: 30px;
       }
 
       .btn-primary {
@@ -75,14 +75,30 @@
       /* Responsividade */
       @media (max-width: 576px) {
         body {
-          padding-top: 60px; /* Menos espaço no topo para mobile */
-          padding-bottom: 200px; /* Mais espaço inferior */
+          padding-top: 60px;
+          padding-bottom: 200px;
         }
         footer {
-          margin-top: 50px; /* Aumentando a margem superior no mobile */
+          margin-top: 50px;
         }
         .btn {
           font-size: 14px;
+        }
+
+        /* Aumentando as margens laterais no mobile */
+        main {
+          padding-left: 30px;  /* Aumentei a margem à esquerda */
+          padding-right: 30px; /* Aumentei a margem à direita */
+          margin: 100px;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 577px) {
+        main {
+          padding-left: 200px;  /* Aumentando mais margem à esquerda */
+          padding-right: 200px; /* Aumentando mais margem à direita */
+         
         }
       }
     </style>
