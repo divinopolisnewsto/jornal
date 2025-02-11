@@ -1,116 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Divinópolis News</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      background-image: url('imagem/background.png'); /* Corrigido o nome da imagem */
-      background-size: cover; /* A imagem de fundo cobre toda a tela */
-      background-position: center center; /* Centraliza a imagem */
-      color: #ffffff; /* Texto claro */
-      padding-top: 80px; /* Espaço para o header fixo */
-      padding-bottom: 60px; /* Espaço para o footer fixo */
-      background-attachment: fixed; /* Imagem fixa enquanto rola a página */
-      text-align: center; /* Centraliza todo o texto da página */
-    }
-
-    .navbar {
-      background-color: #1c1c1c; /* Cor do fundo da navbar */
-    }
-
-    footer {
-      background-color: #1c1c1c; /* Cor do fundo do footer */
-    }
-
-    .btn-primary {
-      background-color: #007bff; /* Azul claro para os botões */
-      border-color: #007bff;
-    }
-    .btn-primary:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
-    }
-    .btn-success {
-      background-color: #28a745; /* Verde claro */
-      border-color: #28a745;
-    }
-    .btn-success:hover {
-      background-color: #218838;
-      border-color: #1e7e34;
-    }
-    .btn-warning {
-      background-color: #ffc107; /* Amarelo para o botão de empregos */
-      border-color: #ffc107;
-    }
-    .btn-warning:hover {
-      background-color: #e0a800;
-      border-color: #d39e00;
-    }
-
-    /* Margem adicional para os textos */
-    h2 {
-      margin-top: 100px; /* Aumentando a margem superior */
-      margin-bottom: 30px; /* Aumentando a margem inferior */
-    }
-
-    p {
-      margin-bottom: 50px; /* Aumentando a margem inferior para o parágrafo */
-    }
-
-    .btn {
-      margin-top: 20px; /* Adicionando um espaço superior entre os botões */
-    }
-
-    /* Responsividade */
-    @media (max-width: 576px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divinópolis News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
       body {
-        padding-top: 60px; /* Menos espaço no topo */
-        padding-bottom: 40px; /* Menos espaço no rodapé */
+        background-image: url("imagem/background.png");
+        background-size: cover;
+        background-position: center center;
+        color: #ffffff;
+        padding-top: 80px;
+        padding-bottom: 120px;
+        background-attachment: fixed;
       }
+
+      .navbar {
+        background-color: #1c1c1c;
+      }
+
+      footer {
+        background-color: #1c1c1c;
+        margin-top: 30px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+
+      .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+
+      .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+      }
+
+      .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+      }
+
+      .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+      }
+
+      h2 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+
       .btn {
-        font-size: 14px; /* Menor tamanho de fonte nos botões */
+        margin-top: 20px;
       }
-    }
-  </style>
-</head>
-<body>
-  <header class="bg-dark text-white py-3 fixed-top">
-    <h1> Divinópolis News</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Centralizando os itens do menu -->
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
-            <li class="nav-item"><a class="nav-link" href="promocoes.html">Promoções</a></li>
-            <li class="nav-item"><a class="nav-link" href="empregos.html">Empregos</a></li>
-            <li class="nav-item"><a class="nav-link" href="profissionais.html">Profissionais</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-          </ul>
+
+      /* Responsividade */
+      @media (max-width: 576px) {
+        body {
+          padding-top: 60px;
+          padding-bottom: 200px;
+        }
+        footer {
+          margin-top: 50px;
+        }
+        .btn {
+          font-size: 14px;
+        }
+
+        /* Aumentando as margens laterais no mobile */
+        main {
+          padding-left: 30px; /* Aumentei a margem à esquerda */
+          padding-right: 30px; /* Aumentei a margem à direita */
+          margin: 100px;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 577px) {
+        main {
+          padding-left: 200px; /* Aumentando mais margem à esquerda */
+          padding-right: 200px; /* Aumentando mais margem à direita */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark text-white py-3 fixed-top">
+      <h1 class="text-center">Divinópolis News</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticias.html">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promocoes.html">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empregos.html">Empregos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profissionais.html">Profissionais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="container mt-4">
-    <section>
-      <h2>Bem-vindo ao Divinópolis News</h2>
-      <p>O jornal local de Divinópolis - TO, trazendo as últimas notícias e atualizações.</p>
-    </section>
-  </main>
+    <main class="container mt-4">
+      <section>
+        <h2>Ofertas Imperdíveis para Você!</h2><br>
 
-  <footer class="bg-dark text-white py-3 fixed-bottom">
-    <p>&copy; 2025 Divinópolis News - Todos os direitos reservados.</p>
-  </footer>
+        <p>
+          Fique ligado em nossa página de promoções! Estamos sempre em busca das
+          melhores ofertas para trazer mais vantagens para você, nosso leitor.
+          Aqui, você encontrará as promoções mais quentes da cidade, com
+          descontos especiais, ofertas de empresas locais e muito mais!
+        </p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <h5>Aproveite as Melhores Ofertas!</h5><br>
+
+        <p>
+          Nossa missão é te manter informado sobre as oportunidades que não
+          podem ser perdidas. A cada atualização, novas promoções estarão
+          disponíveis para você aproveitar. Fique atento e não deixe de conferir
+          as novidades!
+        </p>
+
+        <h5>Tem Promoção para Compartilhar?</h5><br>
+
+        <p>
+          Se você souber de alguma promoção imperdível, envie para nós! Nossa
+          página é feita para você, e estamos abertos para divulgar as ofertas
+          que beneficiem a comunidade de Divinópolis. Envie suas promoções pelo
+          nosso canal de atendimento, preferencialmente via WhatsApp.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3 fixed-bottom text-center">
+      <p>&copy; 2025 Divinópolis News - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
