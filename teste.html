@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divinópolis News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+     <!-- Meta tags para Open Graph (Facebook, WhatsApp, etc.) -->
+   <meta property="og:title" content="Divinópolis News" />
+   <meta property="og:description" content="Fique por dentro das últimas notícias de Divinópolis e região." />
+   <meta property="og:image" content="imagem/Sem Título-1.png" />
+   <meta property="og:url" content="https://divinopolisnewsto.github.io/jornal/" />
+   <meta property="og:type" content="website" />
+   
+    <style>
+      body {
+        background-image: url("imagem/background.jpg");
+        background-size: cover;
+        background-position: center center;
+        color: #ffffff;
+        padding-top: 80px;
+        padding-bottom: 120px;
+        background-attachment: fixed;
+      }
+      .topo{margin-top: 100px;}
+      .navbar {
+        background-color: #1c1c1c;
+      }
+
+      footer {
+        background-color: #1c1c1c;
+        margin-top: 30px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+
+      .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+
+      .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+      }
+
+      .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+      }
+
+      .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+      }
+
+      h2 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+
+      /* Responsividade */
+      @media (max-width: 576px) {
+        body {
+          padding-top: 60px;
+          padding-bottom: 200px;
+        }
+        footer {
+          margin-top: 50px;
+        }
+        .btn {
+          font-size: 14px;
+        }
+
+        /* Aumentando as margens laterais no mobile */
+        main {
+          padding-left: 30px; /* Aumentei a margem à esquerda */
+          padding-right: 30px; /* Aumentei a margem à direita */
+          margin: 100px;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 577px) {
+        main {
+          padding-left: 200px; /* Aumentando mais margem à esquerda */
+          padding-right: 200px; /* Aumentando mais margem à direita */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark text-white py-3 fixed-top">
+      <h1 class="text-center">Divinópolis News</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticias.html">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promocoes.html">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empregos.html">Empregos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profissionais.html">Profissionais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <section>
+        
+            <div class="row topo">
+              <div class="col-md-4">
+                <div class="card text-bg-dark border-0 shadow-lg rounded-4">
+                  <div class="card-body">
+                    <img src="/imagem/" alt="">
+                    <h5 class="card-title">📢 Informativo</h5>
+                    <p class="card-text">
+                      Fique por dentro das últimas novidades e atualizações da nossa cidade.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card text-bg-dark border-0 shadow-lg rounded-4">
+                  <div class="card-body">
+                    <h5 class="card-title">📅 Eventos</h5>
+                    <p class="card-text">
+                      Confira os principais eventos que vão acontecer em Divinópolis - TO.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card text-bg-dark border-0 shadow-lg rounded-4">
+                  <div class="card-body">
+                    <h5 class="card-title">💼 Oportunidades</h5>
+                    <p class="card-text">
+                      Veja as vagas de emprego e oportunidades disponíveis na região.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3 fixed-bottom text-center">
+      <p>&copy; 2025 Divinópolis News - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
