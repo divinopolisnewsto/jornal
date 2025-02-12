@@ -12,101 +12,76 @@
 
     <!-- Meta tags para Open Graph (Facebook, WhatsApp, etc.) -->
     <meta property="og:title" content="Divinópolis News" />
-    <meta property="og:description" content="Fique por dentro das últimas notícias de Divinópolis e região." />
+    <meta
+      property="og:description"
+      content="Fique por dentro das últimas notícias de Divinópolis e região."
+    />
     <meta property="og:image" content="imagem/Sem Título-1.png" />
-    <meta property="og:url" content="https://divinopolisnewsto.github.io/jornal/" />
+    <meta
+      property="og:url"
+      content="https://divinopolisnewsto.github.io/jornal/"
+    />
     <meta property="og:type" content="website" />
-   
+
     <style>
       body {
-        background-image: url("./imagem/background.jpg");
-        background-size: cover;
-        background-position: center center;
-        color: #ffffff;
-        padding-top: 80px;
+        background-color: #121212;
+        color: white;
         padding-bottom: 120px;
-        background-attachment: fixed;
       }
-     
-      .navbar {
-        background-color: #1c1c1c;
+      h5{text-align: center;}
+
+      .card-title {
+        margin-top: 20px; /* Ajuste conforme necessário */
       }
 
+      .navbar,
       footer {
         background-color: #1c1c1c;
-        margin-top: 30px;
       }
 
-      .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
+      .card {
+        background: #1c1c1c;
+        color: white;
+        border: none;
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: calc(500px + 40px); /* 500px da imagem + 20px de cada lado */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; /* Pequeno espaçamento interno */
+        border-radius: 10px;
       }
 
-      .btn-primary:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
+      .image-container {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
       }
 
-      .btn-success {
-        background-color: #28a745;
-        border-color: #28a745;
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
       }
 
-      .btn-success:hover {
-        background-color: #218838;
-        border-color: #1e7e34;
+      .card-content {
+        max-width: 500px;
+        margin: auto;
+        text-align: justify;
       }
 
-      .btn-warning {
-        background-color: #ffc107;
-        border-color: #ffc107;
+      .card-body {
+        padding: 10px;
       }
 
-      .btn-warning:hover {
-        background-color: #e0a800;
-        border-color: #d39e00;
-      }
-
-      h2 {
-        margin-top: 100px;
-        margin-bottom: 30px;
-      }
-
-      p {
-        margin-bottom: 50px;
-      }
-
-      .btn {
-        margin-top: 20px;
-      }
-
-      /* Responsividade */
-      @media (max-width: 576px) {
-        body {
-          padding-top: 60px;
-          padding-bottom: 200px;
-        }
-        footer {
-          margin-top: 50px;
-        }
-        .btn {
-          font-size: 14px;
-        }
-
-        /* Aumentando as margens laterais no mobile */
-        main {
-          padding-left: 30px;  /* Aumentei a margem à esquerda */
-          padding-right: 30px; /* Aumentei a margem à direita */
-          margin: 100px;
-        }
-      }
-
-      /* Desktop */
-      @media (min-width: 577px) {
-        main {
-          padding-left: 200px;  /* Aumentando mais margem à esquerda */
-          padding-right: 200px; /* Aumentando mais margem à direita */
-        }
+      /* Ajuste da margem superior para compensar o header fixo */
+      main {
+        margin-top: 130px; /* Ajuste maior para garantir que o conteúdo fique abaixo do header fixo */
       }
     </style>
   </head>
@@ -153,55 +128,51 @@
     </header>
 
     <main class="container mt-4">
-      <section>
-        <h2>Bem-vindo ao Divinópolis News</h2>
-        <p>
-          <h5>Em Breve, Muitas Notícias Importantes!</h5> <br>
-          Estamos trabalhando para trazer as últimas notícias de Divinópolis e região com agilidade e confiabilidade. Em breve, você verá conteúdos fresquinhos e relevantes, direto da nossa cidade para você!
-        </p>
-        <p>
-          <h5>Nosso Compromisso com a Verdade</h5> <br>
-          Nosso objetivo é sempre trazer informações verdadeiras, com o compromisso de manter você bem informado. Caso identifique alguma notícia que considere falsa (Fake News), por favor, entre em contato conosco. Na aba de Contato, você encontrará um canal direto para reportar qualquer inconsistência. Para nós, é essencial garantir que a informação compartilhada seja precisa e confiável.
-        </p>
-        <p>
-          <h5>A Página é Sua!</h5><br>
-          Divinópolis News é um canal de total interação com você, nosso leitor. Você pode nos enviar notícias ou informações diretamente no nosso canal de atendimento. Dê preferência ao WhatsApp para facilitar o envio. Estamos aqui para dar voz ao povo e trazer as notícias de forma transparente!
-        </p>
-
-        <!-- Cards lado a lado -->
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card text-bg-dark border-0 shadow-lg rounded-4">
-              <div class="card-body">
-                <img src="imagem/campo.jpg" class="card-img-top img-fluid" alt="Imagem">
-                <h5 style="margin-top: 20px;" class="card-title">Valorize os Microprodutores de Divinópolis-TO!</h5>
-                <p class="card-text">
-                  Apoiando os pequenos agricultores da nossa cidade, incentivamos uma alimentação mais saudável, produtos frescos e de qualidade, além de fortalecer a economia local.
-                  Comprar direto do produtor significa menos impacto ambiental, mais empregos e o crescimento sustentável de Divinópolis.
-                  Faça parte desse movimento! Prefira produtos locais e ajude nossa cidade a prosperar! 💚🌍
-                </p>
-              </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="image-container">
+              <img src="imagem/campo.jpg" alt="Imagem" />
             </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card text-bg-dark border-0 shadow-lg rounded-4">
-              <div class="card-body">
-                <img src="imagem/filhadedivinopolis.jpeg" class="card-img-top img-fluid" alt="Imagem">
-                <h5 style="margin-top: 20px;" class="card-title">Essa é Filha de Divinópolis-TO!</h5>
+            <div class="card-body">
+              <div class="card-content">
+                <h5 class="card-title">
+                  Valorize os Microprodutores de Divinópolis-TO!
+                </h5><br>
                 <p class="card-text">
-                  Filha de Divinópolis, Girlene Brito sempre atuante nas cobranças por melhorias em seu bairro onde mora na cidade de Palmas.
-                  Conheça mais sobre Girlene Brito no Instagram @girlenepbrito
+                  Apoiando os pequenos agricultores da nossa cidade,
+                  incentivamos uma alimentação mais saudável, produtos frescos e
+                  de qualidade.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="col-12">
+          <div class="card">
+            <div class="image-container">
+              <img src="imagem/filhadedivinopolis.jpeg" alt="Imagem" />
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <h5 class="card-title">Essa é Filha de Divinópolis-TO!</h5><br>
+                <p class="card-text">
+                  Filha de Divinópolis, Girlene Brito sempre atuante nas
+                  cobranças por melhorias em seu bairro onde mora na cidade de
+                  Palmas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="bg-dark text-white py-2 fixed-bottom text-center">
-      <p class="m-0">&copy; 2025 Divinópolis News - Todos os direitos reservados.</p>
+      <p class="m-0">
+        &copy; 2025 Divinópolis News - Todos os direitos reservados.
+      </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
